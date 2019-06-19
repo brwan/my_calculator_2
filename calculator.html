@@ -1,23 +1,33 @@
-<!DOCTYPE html><html><head>
-  <title>Calculator</title><meta charset="utf-8">
-  <script type="text/javascript">
-  function cube() {
+<!DOCTYPE html>
+<html>
+<head>
+<title>Calculator</title>
+<meta charset="utf-8">
+<script type="text/javascript">
+function cube() {
   var num = document.getElementById("n1");
   num.value = Math.pow(num.value, 3);
-  }
-  function sine() {
+}
+function fourth() {
+  var num = document.getElementById("n1");
+  num.value = Math.pow(num.value, 4);
+}
+function sine() {
   var num = document.getElementById("n1");
   num.value = Math.sin(num.value);
-  }
-  </script>
-  </head>
-  <body>
+}
+</script>
+</head>
+<body>
   <h1>Calculadora de Bruno Pérez!</h1>
-  Number:
-  <input type="text" id="n1">
   <p>
-  <button onclick="cube()"> x^3 </button>
-  <button onclick="sine()"> sin(x) </button>
+    <label for="n1">Number:</label>
+    <input type="text" id="n1">
   </p>
-  </body>
-  </html>
+  <p>
+    <button onclick="cube()"> x^3 </button>
+    <button onclick="fourth()"> x^4 </button>
+    <button onclick="sine()"> sin(x) </button>
+  </p>
+</body>
+</html>
